@@ -1,0 +1,135 @@
+/* Estilo místico para el contenedor principal */
+.container {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Resto de los estilos se mantienen igual */
+
+/* Estilo místico para los botones */
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #6a5d5d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #944d4d;
+}
+
+/* Estilo para ocultar las cartas */
+.hidden {
+  display: none;
+}
+
+.arcano {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.arcano img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.arcano h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.arcano p {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+/* Resto de los estilos se mantienen igual */
+
+/* Estilo para las cartas seleccionadas */
+.arcano-seleccionado {
+  display: block;
+  margin: 0 auto; /* Centrar horizontalmente */
+  max-width: 300px; /* Ancho máximo deseado */
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.arcano:hover {
+  transform: scale(1.05); /* Aumenta el tamaño en un 5% en hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); /* Aumenta la sombra en hover */
+}
+
+/* Estilo para el pop-up de la carta grande */
+.arcano-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.arcano-popup img {
+  max-width: 80%; /* Ancho máximo de la imagen */
+  max-height: 60%; /* Altura máxima de la imagen */
+  border: 2px solid #fff; /* Borde blanco alrededor de la imagen */
+  border-radius: 10px;
+}
+
+.arcano-popup h2 {
+  font-size: 1.8em; /* Tamaño del título */
+  color: #fff; /* Color del título */
+  margin-bottom: 10px; /* Espacio inferior del título */
+}
+
+.arcano-popup p {
+  font-size: 1.2em; /* Tamaño del texto de descripción */
+  color: #fff; /* Color del texto de descripción */
+  margin: 0 10px; /* Márgenes alrededor del texto de descripción */
+}
+
+#quote-container {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+#quote-text {
+  font-size: 1.2em;
+}
+
+#quote-author {
+  font-size: 1em;
+  color: grey;
+}
